@@ -1,64 +1,28 @@
-Google Analytics Data Generator
+# Google Analytics Data Generator
 
-Technologies: Node.js, Google Analytics API (BetaAnalyticsDataClient), Google Auth Library, XlsxPopulate
+**Technologies:** Node.js, Google Analytics API (BetaAnalyticsDataClient), Google Auth Library, XlsxPopulate  
 
-Project Overview
+---
 
-The Google Analytics Data Generator is an automation tool that fetches Google Analytics data from multiple websites and generates clean Excel reports with diagrams and charts. It eliminates the need to manually log in to dashboards, saving time and reducing errors. Ideal for companies managing multiple websites.
+## 🌟 Project Overview
+The **Google Analytics Data Generator** is an automation tool that fetches Google Analytics data from multiple websites and generates **clean, structured Excel reports with charts and diagrams**.  
 
-Features
+Instead of manually logging into Google Analytics dashboards for each website, this tool consolidates analytics data in **one click**, making reporting **efficient, accurate, and scalable**.  
 
-One-click data extraction from single or multiple websites
+---
 
-Excel report generation with structured data and visual diagrams
+## 🛠 Key Features
+- ✅ **One-click analytics extraction** – Fetch data from one or multiple websites simultaneously  
+- 📊 **Excel report generation** – Structured reports with diagrams and charts for easy interpretation  
+- ⚡ **Scalable** – Can handle **100+ websites** efficiently  
+- ⏱ **Automated reporting** – Saves time and reduces human error  
+- 🎯 **Customizable metrics & dimensions** – Generate reports based on the data that matters most  
+- 🔒 **Secure authentication** – Uses Google Auth Library to safely access Google Analytics data  
 
-Scalable: Can handle 100+ websites at once
+---
 
-Automated reporting to save time and increase productivity
-
-Customizable metrics and dimensions for detailed analytics
-
-Secure authentication using Google Auth Library
-
-Installation
-
-Clone the repository:
-
+  ## ⚙️ Installation
+1. Clone the repository:  
+```bash
 git clone https://github.com/manorajsivanmalai/google-analytics-data-generator.git
-
-
-Install dependencies:
-
-npm install
-
-
-Create a .env file for credentials:
-
-GOOGLE_SERVICE_ACCOUNT_KEY='your_service_account_json_here'
-
-Usage
-
-Run the script:
-
-node index.js
-
-
-The tool will fetch data from the configured websites and generate an Excel report with charts.
-
-Business Value
-
-Automates analytics reporting for multiple websites
-
-Provides visual insights through Excel diagrams
-
-Reduces manual effort and human errors
-
-Enables faster decision-making by management
-
-Contributing
-
-Feel free to contribute by opening an issue or pull request. Please do not commit any secrets or API keys.
-
-License
-
-MIT License
+cd google-analytics-data-generator
