@@ -2,14 +2,12 @@ const { BetaAnalyticsDataClient } = require('@google-analytics/data');
 const { GoogleAuth } = require('google-auth-library');
 
 
-// Replace this with your actual service account key JSON
-//https://console.cloud.google.com/welcome?project=dlranalyticsdata
 
 const serviceAccountKey = {
   type: process.env.GA_AUTHKEY_TYPE,
   project_id: process.env.GA_AUTHKEY_PROJECT_ID,
   private_key_id: process.env.GA_AUTHKEY_PRIVATE_KEY_ID,
-  private_key: process.env.GA_AUTHKEY_PRIVATE_KEY.replace(/\\n/g, '\n'), // Convert \n to actual newlines
+  private_key: process.env.GA_AUTHKEY_PRIVATE_KEY.replace(/\\n/g, '\n'), 
   client_email: process.env.GA_AUTHKEY_CLIENT_EMAIL,
   client_id: process.env.GA_AUTHKEY_CLIENT_ID,
   auth_uri: process.env.GA_AUTHKEY_AUTH_URI,
